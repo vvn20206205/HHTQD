@@ -1,0 +1,46 @@
+version: "3.4"
+
+services:
+
+
+  mssql:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    restart: always
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "0123456789"
+    ports:
+      - 1433:1433
+      
+  # mysql:
+  #   image: mysql
+  #   restart: always
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: nghia
+  #     MYSQL_DATABASE: nghia
+  #     MYSQL_USER: test_user
+  #     MYSQL_PASSWORD: test_user
+  #     MYSQL_TCP_PORT: 3306
+  #   # command: --init-file /init.sql
+  #   # volumes:
+  #     # - ./mysql/init.sql:/init.sql
+  #   # logging:
+  #     # driver: none
+
+  # phpmyadmin:
+  #   image: phpmyadmin/phpmyadmin
+  #   restart: always
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     PMA_HOST: mysql
+  #     PMA_USER: root
+  #     PMA_PASSWORD: nghia
+  #   logging:
+  #     driver: none
+
+
