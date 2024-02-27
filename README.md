@@ -1,4 +1,4 @@
-Xin chào mọi người,
+<!-- Xin chào mọi người,
 
 ```
 Hi everyone,
@@ -85,4 +85,4 @@ I have knowledge about deploy and management microservices architecture.
 In addition, I also have knowledge about Docker containers and version control systems such as: Git (GitHub, GitLab, ...)
 
 I am very happy to meet and share with everyone today
-```
+``` -->
