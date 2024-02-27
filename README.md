@@ -1,75 +1,67 @@
-Do em sử dụng `MySql` không hỗ trợ file `.xlsx` như `SQL Sever` nên em chỉ tạo lệnh truy vấn.
+Xin chào mọi người,
 
-1. Tổng hợp dữ liệu tổng tiền cho từng đơn hàng.
-
-```sql
-SELECT
-    o.orderNumber,
-    SUM(od.quantityOrdered * od.priceEach) AS totalAmount
-FROM
-    orders o
-INNER JOIN
-    orderdetails od ON o.orderNumber = od.orderNumber
-GROUP BY
-    o.orderNumber;
+```
+Hi everyone,
 ```
 
-2. Tổng hợp dữ liệu tổng tiền cho từng khách hàng.
+Tôi tên là Vũ Văn Nghĩa,
 
-```sql
-SELECT
-    o.customerNumber,
-    c.customerName,
-    SUM(od.quantityOrdered * od.priceEach) AS totalAmount
-FROM
-    orders o
-INNER JOIN
-    orderdetails od ON o.orderNumber = od.orderNumber
-INNER JOIN
-    customers c ON o.customerNumber = c.customerNumber
-GROUP BY
-    o.customerNumber, c.customerName;
+```
+My name is Vu Van Nghia,
 ```
 
-3. Tổng hợp dữ liệu tổng tiền cho từng dòng sản phẩm:
+Tôi sinh ngày 04/05/2002
 
-```sql
-SELECT
-    productCode,
-    SUM(quantityOrdered * priceEach) AS totalAmount
-FROM
-    orderdetails
-GROUP BY
-    productCode;
+```
+My date of birth is May 4, 2002,
 ```
 
-4. Tổng hợp dữ liệu tổng tiền cho từng sản phẩm:
+Tôi đến từ tỉnh Hải Dương
 
-```sql
-SELECT
-    p.productCode,
-    p.productName,
-    SUM(od.quantityOrdered * od.priceEach) AS totalAmount
-FROM
-    products p
-INNER JOIN
-    orderdetails od ON p.productCode = od.productCode
-GROUP BY
-    p.productCode, p.productName;
+```
+I come from Hai Duong province
 ```
 
-5. Tổng hợp dữ liệu tổng tiền cho từng quốc gia:
+Tôi đang học ở FaMI HUST
 
-```sql
-SELECT
-    c.country,
-    SUM(od.quantityOrdered * od.priceEach) AS totalAmount
-FROM
-    orders o
-INNER JOIN
-    orderdetails od ON o.orderNumber = od.orderNumber
-INNER JOIN
-    customers c ON o.customerNumber = c.customerNumber
-GROUP BY
-    c.country;
+```
+Currently, I am studying at Hanoi University of Science and Technology.
+```
+
+Đây là thông tin liên lạc của tôi như email, số điện thoại, github
+
+```
+This is my contact information such as email, phone number, github
+```
+
+Tôi rất vui khi được kết nối và chia sẻ cùng mọi người!
+
+```
+I'm happy to connect and share with everyone!
+```
+
+Đây là các kỹ năng của tôi:
+
+```
+These are my skills:
+```
+
+```
+I know basic programming languages such as: C, C++, C Sharp, Python, JavaScript.
+```
+
+```
+I have knowledge about deploy and management microservices architecture.
+```
+
+Ngoài ra, tôi còn có kiến thức về container: Docker và version control systems: Git (GitHub, GitLab, ...)
+
+```
+In addition, I also have knowledge about Docker containers and version control systems such as: Git (GitHub, GitLab, ...)
+```
+
+Tôi rất vui khi được gặp gỡ và chia sẻ cùng mọi người trong hôm nay
+
+```
+I am very happy to meet and share with everyone today
 ```
