@@ -66,23 +66,18 @@ Tôi rất vui khi được gặp gỡ và chia sẻ cùng mọi người trong 
 I am very happy to meet and share with everyone today
 ```
 
+```
 Hi everyone,
-
 My name is Vu Van Nghia,
-
 My date of birth is May 4, 2002,
-
 I come from Hai Duong province
 
 Currently, I am studying at Hanoi University of Science and Technology.
 
-
 This is my contact information such as email, phone number, github
-
 I'm happy to connect and share with everyone!
 
 These are my skills:
-
 I know basic programming languages such as: C, C++, C Sharp, Python, JavaScript.
 
 I have knowledge about deploy and management microservices architecture.
@@ -90,3 +85,4 @@ I have knowledge about deploy and management microservices architecture.
 In addition, I also have knowledge about Docker containers and version control systems such as: Git (GitHub, GitLab, ...)
 
 I am very happy to meet and share with everyone today
+```
